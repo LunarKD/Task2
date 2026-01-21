@@ -1,0 +1,34 @@
+﻿using System;
+
+namespace _2._19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите четырехзначное число (1000-9999):");
+            int n = (int)checkInput(1000,9999);
+            Console.Clear();
+            int ones = (n / 10) % 10;
+            int tens = (n / 100) % 10;
+            int hundreds = n % 10;
+            int thousands = n / 1000;
+
+            Console.WriteLine(thousands + hundreds + tens + ones);
+            Console.WriteLine(thousands * hundreds * tens * ones);
+        }
+        static public double checkInput(int min, int max)
+        {
+            double x;
+            string KeayboardInput = Console.ReadLine();
+            while (!Double.TryParse(KeayboardInput, out x) || x < min || x > max)
+            {
+                Console.WriteLine("Некоректный ввод!");
+                KeayboardInput = Console.ReadLine();
+            }
+            return x;
+        }
+      
+
+    }
+}
