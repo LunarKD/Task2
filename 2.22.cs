@@ -6,8 +6,8 @@ namespace _2._22
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите четырехзначное число (100 - 999):");
-            int n = (int)checkInput(100,999);
+            Console.WriteLine("Введите число (10 - 99):");
+            int n = (int)checkInput(10,99);
             Console.Clear();
             int tens = (n / 10) % 10;
             int hundreds = (n / 100) % 10;
@@ -30,3 +30,4 @@ namespace _2._22
 
     }
 }
+
