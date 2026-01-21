@@ -6,7 +6,7 @@ namespace _2._27
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите четырехзначное число (1 - 999):");
+            Console.WriteLine("Введите число (1 - 999):");
             int n = (int)checkInput(1,999);
 
             int a = n % 10;
@@ -30,3 +30,4 @@ namespace _2._27
 
     }
 }
+
