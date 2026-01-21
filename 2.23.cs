@@ -6,7 +6,7 @@ namespace _2._23
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите четырехзначное число (1000 - 9999):");
+            Console.WriteLine("Введите число (1000 - 9999):");
             int n = (int)checkInput(1000,9999);
             Console.Clear();
             int hundreds = (n / 100) % 10;
@@ -30,3 +30,4 @@ namespace _2._23
 
     }
 }
+
